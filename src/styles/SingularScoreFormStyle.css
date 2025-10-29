@@ -1,33 +1,33 @@
 .summaryContentContainer {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1.6rem;
 }
 
 .summaryItem {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 17.5px 16px;
-  border-radius: 12px;
+  padding: 1.75rem 1.6rem;
+  border-radius: 1.2rem;
 }
 
 .summaryItemLabel {
   display: flex;
-  gap: 16px;
+  gap: 1.6rem;
 }
 
 .itemHeader {
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
 }
 
 .summaryItemScore {
   font-family: var(--Bold);
-  font-size: 16px;
-  line-height: 21px;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
   color: var(--Navy-950);
 }
 
@@ -35,18 +35,18 @@
   opacity: 0.5;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48em) {
   .itemHeader {
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
   }
 
   .summaryItem {
-    padding: 16.5px 16px;
+    padding: 1.65rem 1.6rem;
   }
 
   .summaryItemScore {
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
   }
 }

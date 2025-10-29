@@ -44,6 +44,7 @@ html {
   --Navy-50: hsl(221, 100%, 96%);
   --Navy-200: hsl(241, 100%, 89%);
   --Navy-950: hsl(224, 30%, 27%);
+  --Shadow-Color: hsla(224, 82%, 58%, 0.15);
 
   /* Fonts */
   --Medium: "Medium", sans-serif;
@@ -83,45 +84,45 @@ img {
 .summaryContainer {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  padding: 24px 30px 30px;
+  gap: 2.4rem;
+  padding: 2.4rem 3rem 3rem;
   background-color: var(--White);
 }
 
 .summaryHeader {
   font-family: var(--Bold);
-  font-size: 18px;
-  line-height: 23px;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
   color: var(--Navy-950);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48em) {
   .background {
-    padding: 284px 41px;
+    padding: 28.4rem 4.1rem;
     background: var(--Blue-50);
   }
 
   .mainContainer {
     display: flex;
     background-color: var(--White);
-    border-radius: 32px;
+    border-radius: 3.2rem;
   }
 
   .summaryContainer {
-    border-radius: 32px;
-    padding: 44.5px 40px;
-    gap: 32px;
+    border-radius: 3.2rem;
+    padding: 4.45rem 4rem;
+    gap: 3.2rem;
     width: 100%;
   }
 
   .summaryHeader {
-    font-size: 24px;
-    line-height: 31px;
+    font-size: 2.4rem;
+    line-height: 3.1rem;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 90em) {
   .background {
-    padding: 284px 352px;
+    padding: 28.4rem 35.2rem;
   }
 }

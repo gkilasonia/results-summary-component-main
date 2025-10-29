@@ -7,7 +7,7 @@ function SingularScoreForm() {
     <section className="summaryContentContainer">
       {data.map((item, index) => (
         <div
-          key={index}
+          key={item.id}
           className="summaryItem"
           style={{ backgroundColor: item.backgroundColor }}
         >

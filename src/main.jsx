@@ -1,4 +1,4 @@
-import { StrictMode, React } from "react";
+import React, { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import FinalScoreCard from "./components/FinalScoreCard";
 import SingularScoreForm from "./components/SingularScoreForm";
@@ -11,7 +11,7 @@ createRoot(document.getElementById("root")).render(
       <div className="mainContainer">
         <FinalScoreCard />
         <div className="summaryContainer">
-          <h2 className="summaryHeader">Summary</h2>
+          <h1 className="summaryHeader">Summary</h1>
           <SingularScoreForm />
           <Button />
         </div>

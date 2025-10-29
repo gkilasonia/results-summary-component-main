@@ -3,21 +3,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 24px;
-  padding: 32px 57.5px;
+  gap: 2.4rem;
+  padding: 3.2rem 5.75rem;
   background: linear-gradient(
     180deg,
     var(--Light-Slate-Blue-Background) 0%,
     var(--Light-Royal-Blue-Background) 100%
   );
-  border-radius: 0px 0px 32px 32px;
-  box-shadow: 0px 30px 60px hsla(224, 82%, 58%, 0.15);
+  border-radius: 0 0 3.2rem 3.2rem;
+  box-shadow: 0rem 3rem 6rem var(--Shadow-Color);
 }
 
 .resultHeader {
   font-family: var(--Bold);
-  font-size: 18px;
-  line-height: 23px;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
   color: var(--Navy-200);
 }
 
@@ -26,8 +26,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 140px;
-  height: 140px;
+  width: 14rem;
+  height: 14rem;
   background: linear-gradient(
     180deg,
     var(--Violet-Blue-Circle) 0%,
@@ -38,15 +38,15 @@
 
 .score {
   font-family: var(--ExtraBold);
-  font-size: 56px;
-  line-height: 56px;
+  font-size: 5.6rem;
+  line-height: 5.6rem;
   color: var(--White);
 }
 
 .outOfText {
   font-family: var(--Bold);
-  font-size: 16px;
-  line-height: 21px;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
   color: var(--Navy-200);
   opacity: 0.52;
 }
@@ -55,73 +55,73 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 0.8rem;
 }
 
 .feedbackHeadline {
   font-family: var(--Bold);
-  font-size: 24px;
-  line-height: 31px;
+  font-size: 2.4rem;
+  line-height: 3.1rem;
   color: var(--White);
 }
 
 .feedback {
-  font-size: 16px;
-  line-height: 21px;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
   text-align: center;
   color: var(--Navy-200);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48em) {
   .resultContainer {
-    padding: 45px 69px;
-    border-radius: 32px;
-    gap: 32px;
+    padding: 4.5rem 6.9rem;
+    border-radius: 3.2rem;
+    gap: 3.2rem;
     box-shadow: unset;
   }
 
   .resultHeader {
-    font-size: 24px;
-    line-height: 31px;
+    font-size: 2.4rem;
+    line-height: 3.1rem;
   }
 
   .scoreContainer {
-    width: 200px;
-    height: 200px;
+    width: 20rem;
+    height: 20rem;
   }
 
   .score {
-    font-size: 72px;
-    line-height: 72px;
+    font-size: 7.2rem;
+    line-height: 7.2rem;
   }
 
   .outOfText {
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
   }
 
   .feedbackContainer {
-    gap: 16px;
+    gap: 1.6rem;
   }
 
   .feedbackHeadline {
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 3.2rem;
+    line-height: 4.2rem;
   }
 
   .feedback {
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 90em) {
   .resultContainer {
-    padding: 45px 54px;
+    padding: 4.5rem 5.4rem;
     box-shadow: unset;
   }
 
   .feedback {
-    width: 260px;
+    width: 26rem;
   }
 }

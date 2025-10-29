@@ -1,0 +1,127 @@
+/* =========================
+   Fonts and Root Variables
+   ========================= */
+@font-face {
+  font-family: "Medium";
+  src: url("./assets/fonts/static/HankenGrotesk-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bold";
+  src: url("./assets/fonts/static/HankenGrotesk-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ExtraBold";
+  src: url("./assets/fonts/static/HankenGrotesk-ExtraBold.ttf")
+    format("truetype");
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+  --Red-50: hsl(0, 100%, 98%);
+  --Red-400: hsl(0, 100%, 67%);
+  --Yellow-50: hsl(38, 100%, 98%);
+  --Yellow-400: hsl(39, 100%, 56%);
+  --Green-50: hsl(162, 63%, 97%);
+  --Green-500: hsl(166, 100%, 37%);
+  --Blue-50: hsl(234, 71%, 97%);
+  --Blue-800: hsl(234, 85%, 45%);
+
+  /* Gradients */
+  --Light-Slate-Blue-Background: hsl(252, 100%, 67%);
+  --Light-Royal-Blue-Background: hsl(241, 81%, 54%);
+  --Violet-Blue-Circle: hsla(256, 72%, 46%, 1);
+  --Persian-Blue-Circle: hsla(241, 72%, 46%, 0);
+
+  /* Neutral */
+  --White: hsl(0, 0%, 100%);
+  --Navy-50: hsl(221, 100%, 96%);
+  --Navy-200: hsl(241, 100%, 89%);
+  --Navy-950: hsl(224, 30%, 27%);
+
+  /* Fonts */
+  --Medium: "Medium", sans-serif;
+  --Bold: "Bold", sans-serif;
+  --ExtraBold: "ExtraBold", sans-serif;
+}
+
+/* =========================
+   Global Reset & Utilities
+   ========================= */
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--Medium);
+  min-height: 100dvh;
+}
+
+button {
+  font: inherit;
+  border: none;
+  line-height: 1;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+/* =========================
+   Main Style
+   ========================= */
+
+.summaryContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px 30px 30px;
+  background-color: var(--White);
+}
+
+.summaryHeader {
+  font-family: var(--Bold);
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--Navy-950);
+}
+
+@media (min-width: 768px) {
+  .background {
+    padding: 284px 41px;
+    background: var(--Blue-50);
+  }
+
+  .mainContainer {
+    display: flex;
+    background-color: var(--White);
+    border-radius: 32px;
+  }
+
+  .summaryContainer {
+    border-radius: 32px;
+    padding: 44.5px 40px;
+    gap: 32px;
+    width: 100%;
+  }
+
+  .summaryHeader {
+    font-size: 24px;
+    line-height: 31px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .background {
+    padding: 284px 352px;
+  }
+}

@@ -1,0 +1,52 @@
+.summaryContentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.summaryItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17.5px 16px;
+  border-radius: 12px;
+}
+
+.summaryItemLabel {
+  display: flex;
+  gap: 16px;
+}
+
+.itemHeader {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.summaryItemScore {
+  font-family: var(--Bold);
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--Navy-950);
+}
+
+.outOf {
+  opacity: 0.5;
+}
+
+@media (min-width: 768px) {
+  .itemHeader {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .summaryItem {
+    padding: 16.5px 16px;
+  }
+
+  .summaryItemScore {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}

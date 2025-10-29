@@ -1,0 +1,37 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  max-width: 315px;
+  width: 100%;
+  height: 56px;
+  background: var(--Navy-950);
+  border-radius: 128px;
+  color: var(--White);
+  font-family: var(--Bold);
+  font-family: var(--ExtraBold);
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.button:hover {
+  background: linear-gradient(
+    180deg,
+    var(--Light-Slate-Blue-Background) 0%,
+    var(--Light-Royal-Blue-Background) 100%
+  );
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .button {
+    width: 268px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .button {
+    width: 288px;
+  }
+}

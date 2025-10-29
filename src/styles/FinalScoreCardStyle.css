@@ -1,0 +1,127 @@
+.resultContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 32px 57.5px;
+  background: linear-gradient(
+    180deg,
+    var(--Light-Slate-Blue-Background) 0%,
+    var(--Light-Royal-Blue-Background) 100%
+  );
+  border-radius: 0px 0px 32px 32px;
+  box-shadow: 0px 30px 60px hsla(224, 82%, 58%, 0.15);
+}
+
+.resultHeader {
+  font-family: var(--Bold);
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--Navy-200);
+}
+
+.scoreContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 140px;
+  background: linear-gradient(
+    180deg,
+    var(--Violet-Blue-Circle) 0%,
+    var(--Persian-Blue-Circle) 100%
+  );
+  border-radius: 50%;
+}
+
+.score {
+  font-family: var(--ExtraBold);
+  font-size: 56px;
+  line-height: 56px;
+  color: var(--White);
+}
+
+.outOfText {
+  font-family: var(--Bold);
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--Navy-200);
+  opacity: 0.52;
+}
+
+.feedbackContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.feedbackHeadline {
+  font-family: var(--Bold);
+  font-size: 24px;
+  line-height: 31px;
+  color: var(--White);
+}
+
+.feedback {
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: var(--Navy-200);
+}
+
+@media (min-width: 768px) {
+  .resultContainer {
+    padding: 45px 69px;
+    border-radius: 32px;
+    gap: 32px;
+    box-shadow: unset;
+  }
+
+  .resultHeader {
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .scoreContainer {
+    width: 200px;
+    height: 200px;
+  }
+
+  .score {
+    font-size: 72px;
+    line-height: 72px;
+  }
+
+  .outOfText {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .feedbackContainer {
+    gap: 16px;
+  }
+
+  .feedbackHeadline {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .feedback {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .resultContainer {
+    padding: 45px 54px;
+    box-shadow: unset;
+  }
+
+  .feedback {
+    width: 260px;
+  }
+}

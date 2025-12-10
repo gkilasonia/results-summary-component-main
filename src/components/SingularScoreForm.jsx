@@ -5,7 +5,7 @@ import "../styles/SingularScoreFormStyle.css";
 function SingularScoreForm() {
   return (
     <section className="summaryContentContainer">
-      {data.map((item, index) => (
+      {data.map((item) => (
         <div
           key={item.id}
           className="summaryItem"
